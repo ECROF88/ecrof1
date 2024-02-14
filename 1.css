@@ -1,0 +1,42 @@
+#grid {
+    margin: auto;  /* 让矩阵居中显示于页面 */
+}
+.blocks {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;   /* 让span以block方式显示 */
+    text-align: center;
+    border: solid 1px #000;
+    /* user-select: none;  设置不可拖拽选中 */
+    cursor: pointer;  /* 设置鼠标停留样式 */
+    background-image: url('resources/blank.bmp');
+    background-position: left;
+    width: 25px;
+    height: 25px;
+}
+.blocks:hover {
+    /* background: bisque;  鼠标停留时背景颜色变化 */
+    background-image: url('resources/0.bmp');
+    background-position: left;
+}
+.start{
+    --color:rgb(0, 217, 255);
+    width: 60px;
+    height: 40px;
+    background-color: var(--color);
+    color: gold;
+    border-radius: 25px;
+    border: 3px solid #ecdfdf;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+}
+.start:hover{
+    transition: 0.5s;
+    background: #eb0808;
+}
+
+#idiv{
+    margin-left: 15px;
+    margin-top: 15px;
+}
